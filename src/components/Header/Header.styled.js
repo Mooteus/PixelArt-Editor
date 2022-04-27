@@ -15,4 +15,12 @@ export const UlOption = styled.ul`
 
 export const LiOption = styled.li`
   color: white;
+  cursor: pointer;
+`;
+
+export const ShowArchives = styled.div`
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  visibility: ${(props) => (props.view ? 'visible' : 'hidden')};
 `;
