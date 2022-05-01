@@ -15,12 +15,22 @@ export const UlOption = styled.ul`
 
 export const LiOption = styled.li`
   color: white;
+  width: 60px;
+  height: 30px;
   cursor: pointer;
 `;
 
-export const ShowArchives = styled.div`
-  width: 100px;
-  height: 100px;
-  background-color: red;
+export const ShowArchivesUl = styled.ul`
+  padding: 0;
+  width: 150px;
+  height: 200px;
+  background-color: #191919;
+  list-style: none;
+  position: relative;
   visibility: ${(props) => (props.view ? 'visible' : 'hidden')};
+`;
+
+export const ShowArchivesLi = styled.li`
+  margin: 10px;
+  font-size: 10px;
 `;
